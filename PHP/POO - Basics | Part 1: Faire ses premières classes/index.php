@@ -22,6 +22,7 @@ require_once 'Car.php';
 $car = new Car('blue', 5, 'essence');
 
 // Moving car
+// Brake / Forward
 $car->setCurrentSpeed(10);
 echo $car->forward();
 echo '<br> Vitesse de la voiture : ' . $car->getCurrentSpeed() . ' km/h' . '<br>';
@@ -29,6 +30,8 @@ echo $car->brake();
 echo '<br> Vitesse de la voiture : ' . $car->getCurrentSpeed() . ' km/h' . '<br>';
 echo $car->brake();
 echo '<br>'.'<br>';
+
+// Start car
 echo '<br> Vitesse de la voiture : ' . $car->getCurrentSpeed() . ' km/h' . '<br>';
 echo $car->start();
 echo '<br> Vitesse de la voiture : ' . $car->getCurrentSpeed() . ' km/h' . '<br>';
